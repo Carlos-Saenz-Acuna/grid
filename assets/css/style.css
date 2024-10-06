@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+   font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #363231;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'navbar navbar navbar navbar'
+    'sidebar  main main main'
+    'footer footer footer footer';
+}
+
+nav {
+  grid-area: navbar;
+  background-color: #363231;
+  padding: 1.5rem;
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: #B9423E;
+  padding: 1rem;
+  color: #363231;
+  
+}
+
+
+main {
+  grid-area: main;
+  background-color: #F2E8A8;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #363231;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+img {
+  margin-top: 100px;
+  height: 300px;
+  width: 500px;
+}
+
+ul {
+  list-style-type: none;
+  
+
+}
+
+li {
+  margin: 10px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #363231;
+}
+
+.productos{
+    padding: 16px 8px;
+    grid-area: menu;
+    display:grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+}
+
+.caja-producto{
+   
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #363231;
+    text-align: center;
+    max-height: 250px;
+    min-height: 250px;
+    gap: 20px;
+
+}
+
+img{
+    margin: 0;
+    width: auto;
+    height: 200px;
+    
+}
