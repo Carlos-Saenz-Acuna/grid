@@ -10,12 +10,13 @@ body {
   font-style: normal;
   color: #363231;
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: 1Fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    'navbar navbar navbar navbar'
-    'sidebar  main main main'
-    'footer footer footer footer';
+    'navbar navbar navbar navbar navbar'
+    'sidebar  main main main main'
+    'footer footer footer footer footer';
+
 }
 
 nav {
@@ -79,13 +80,16 @@ a {
   color: #363231;
 }
 
+a:hover{
+  color:rgb(212, 212, 212);
+}
+
 .productos{
     padding: 16px 8px;
     grid-area: menu;
     display:grid;
     gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));    
 }
 
 .caja-producto{
@@ -94,8 +98,8 @@ a {
     flex-direction: column;
     border: 5px solid #363231;
     text-align: center;
-    max-height: 250px;
-    min-height: 250px;
+    max-height: 350px;
+    min-height: 150px;
     gap: 20px;
 
 }
@@ -105,4 +109,18 @@ img{
     width: auto;
     height: 200px;
     
+}
+
+button{
+  background-color: #363231;
+  height: 40px;
+  font-family: "Sixtyfour Convergence", sans-serif;
+
+}
+
+button:hover{
+background-color:rgb(212, 212, 212);
+  height: 40px;
+  font-family: "Sixtyfour Convergence", sans-serif;
+
 }
